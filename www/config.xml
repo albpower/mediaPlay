@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.albpower.mediaPlay"
+        versionCode = "1"
+        version   = "1.0.0">
+    
+  <name>mediaPlay</name>
+  <description>
+        A Media plugin example.
+    </description>
+  <author email="afrim.a@msn.com" href="http://afrimazizi.tk/">
+      Afrim Azizi
+    </author>
+    
+  <content src="index.html"/>
+  <access origin="*"/>
+  
+	<preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
+    <preference name="webviewbounce" value="false"/>
+    <preference name="UIWebViewBounce" value="false"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="BackupWebStorage" value="none"/>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true"/>
+    </feature>
+
+    <!-- Plugins -->
+    <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+
+</widget>
+
